@@ -18,5 +18,5 @@ class VendingMachine:
 def main():
     v = VendingMachine()
     v.purchase(int(input()))
-    # v.restock(int(input())
-    # v.report()
+    v.restock(int(input())
+    v.report()
