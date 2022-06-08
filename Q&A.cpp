@@ -1,18 +1,8 @@
-/*
- * Make sure to add your own code and comment thoroughly.
- */
-
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-/*
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * Here begins the code for the base class Question.
- * Do not change the following part!
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- */
 
 class Question{
 public:
@@ -70,35 +60,17 @@ void Question::display() const
     cout << text << endl;
 }
 
-/*
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * Here ends the code for the base class Question.
- * Do not change the above part!
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- */
-
-
-/*
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * Here begins the code for the inherited class FillInQuestion.
- * Your work begins here till the end of the file.
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- */
 
 class FillInQuestion : public Question
 {
 public:
-    //declare constructor here
+
 FillInQuestion();
 void ChangeQuestion(string question);
 
-    //your member functions declared (not defined!) here, if any.
-
 private:
-    //your members declared here, if any; remember, members are private by default
 };
 
-//build constructor here to initialize the fill-in question.
 FillInQuestion::FillInQuestion() = default;
 
 // Function that takes question text and separates question and answer and stores them into variables
@@ -112,13 +84,12 @@ void FillInQuestion::ChangeQuestion(string question) {
     this ->set_text(q);
     this ->set_answer(answer);
 }
-//your member functions here, if any
+
 
 
 int main() {
     string question = "The winner of the Red River Shootout will be _UT Austin_, obviously."; // a preset example question
     string response;  // variable to store the response from the user
-    // your code here to ask the user this question, prompt the user to enter their response, and tell them if they got the answer right
 
     // Create FillInQuestion object q and call ChangeQuestion function to separate question and answer
     FillInQuestion q = FillInQuestion();
