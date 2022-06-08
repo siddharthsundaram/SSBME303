@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// String reversal using pointer
 int main() {
 
     // Declaration and assignment of input string variable
