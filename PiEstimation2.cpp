@@ -3,6 +3,7 @@
 #include <cmath>
 using namespace std;
 
+// Estimation of pi using the Monte Carlo Simulation
 int main() {
     // Declaration of input variable, pi, count variable, and random seed
     int n;
