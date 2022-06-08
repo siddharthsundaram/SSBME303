@@ -3,6 +3,7 @@
 #include <cmath>
 using namespace std;
 
+// Estimation of pi using numerical intergration
 int main() {
     // Declaration of the variables for number of rectangles (input), x position, and pi
     int n;
